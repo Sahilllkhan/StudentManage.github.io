@@ -1,0 +1,41 @@
+{% include "head.html" %}
+
+<div class="container my-5 border border-5" style="overflow: scroll;width: 90%;" >
+    <h1>View All Students</h1>
+    <table class="table table-light table-striped" >
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Father's Name</th>
+            <th>Mother's Name</th>
+            <th>Phone No.</th>
+            <th>Fee</th>
+            <th>Course</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Registration No.</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for a in alldata %}
+            
+          <tr>
+            <th scope="row">{{a.id}}</th>
+            <td>{{a.name}}</td>
+            <td>{{a.fname}}</td>
+            <td>{{a.mname}}</td>
+            <td>{{a.phone_no}}</td>
+            <td>{{a.fee}}</td>
+            <td>{{a.course}}</td>
+            <td>{{a.gender}}</td>
+            <td>{{a.address}}</td>
+            <td>{{a.regno}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+  </div>
+  <!--Main End-->
+
+{% include "footer.html" %}

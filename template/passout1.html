@@ -1,0 +1,44 @@
+{% include "head.html" %}
+
+<div class="container my-5 border border-5" >
+    ​<table class="table table-light table-striped" >
+        <tr>
+            <th>Name</th>
+            <td>{{regnodata.name}}</td>
+        </tr>
+        <tr>
+            <th>Father Name</th>
+            <td>{{regnodata.fname}}</td>
+        </tr>
+        <tr>
+            <th>Mother Name</th>
+            <td>{{regnodata.mname}}</td>
+        </tr>
+        <tr>
+            <th>Phone No.</th>
+            <td>{{regnodata.phone_no}}</td>
+        </tr>
+        <tr>
+            <th>Course</th>
+            <td>{{regnodata.course}}</td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td>{{regnodata.address}}</td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>{{regnodata.gender}}</td>
+        </tr>
+        <tr>
+            <th>Fee</th>
+            <td>{{regnodata.fee}}</td>
+        </tr>
+        <tr>
+            <th>Photo</th>
+            <td>{{regnodata.photo}}</td>
+        </tr>
+    </table>
+  </div>
+
+{% include "footer.html" %}
